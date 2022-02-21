@@ -8,14 +8,16 @@ const Home: NextPage = () => {
     <Container maxW={'container.lg'} pt={'30px'}>
       <Heading>Sounds</Heading>
       <Grid templateColumns='repeat(5, 1fr)' gap={4} mt={10}>
-        <GridItem w='100%' h='130' >
+        
          {
            sounds.map((sound, key) => (
-            <SoundBox {...sound} key={key} /> 
+            <GridItem w='100%' h='130' >
+              <SoundBox {...sound} key={key} /> 
+            </GridItem>
            ))
          }
          
-        </GridItem>
+        
         
       </Grid>
     </Container>
