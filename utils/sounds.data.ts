@@ -1,6 +1,7 @@
 import { ISound } from "./Sound"
-import { BsCloudRain, BsTsunami, BsWater } from 'react-icons/bs';
+import { BsCloudRain, BsTsunami, BsWater, BsFillPeopleFill } from 'react-icons/bs';
 import { HiFire } from 'react-icons/hi';
+import { GiKidSlide } from 'react-icons/gi'
 
 export const sounds : ISound[] = [
     {
@@ -22,5 +23,15 @@ export const sounds : ISound[] = [
         Icon: BsWater,
         name: "River",
         path: '/sounds/stream-3.mp3'
+    },
+    {
+        Icon: BsFillPeopleFill,
+        name: "People",
+        path: '/sounds/food-court-1.mp3'
+    },
+    {
+        Icon: GiKidSlide,
+        name: "Kids Playing",
+        path: '/sounds/kids-playing-1.mp3'
     }, 
 ]

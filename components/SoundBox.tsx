@@ -19,7 +19,7 @@ export const SoundBox : React.FC<ISound> = ({name, path, Icon}) => {
 
     return(
         <Center borderRadius={'15px'} bg={status == 'PAUSED' ? '#f7f4f4' : '#d4f5ce'} height={'100%'}>
-            <Box w={'100%'} p={'10px'}>
+            <Box w={'100%'} p={'20px'}>
             <Icon size={30} style={{margin: 'auto', marginBottom: '10px'}} />
             <Sound 
                 playStatus={status as any} 
