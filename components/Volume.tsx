@@ -2,7 +2,7 @@ import { Slider, SliderMark, SliderTrack, SliderFilledTrack, Tooltip, SliderThum
 import React from 'react';
 
 interface Props {
-    change: (val: number) => void; 
+    change: (val: number) => void;
 }
 
 export const Volume : React.FC<Props> = ({change}) => {
@@ -26,7 +26,6 @@ export const Volume : React.FC<Props> = ({change}) => {
       onMouseEnter={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}
     >
-      
       <SliderTrack>
         <SliderFilledTrack />
       </SliderTrack>
