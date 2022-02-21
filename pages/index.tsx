@@ -11,8 +11,8 @@ const Home: NextPage = () => {
         
          {
            sounds.map((sound, key) => (
-            <GridItem w='100%' h='130' >
-              <SoundBox {...sound} key={key} /> 
+            <GridItem key={key} w='100%' h='130' >
+              <SoundBox {...sound}  /> 
             </GridItem>
            ))
          }
