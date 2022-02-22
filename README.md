@@ -1,6 +1,6 @@
 # Beautiful Sounds 😴
 
-## Add your favorite sounds 😎
+## Add your favourite sounds 😎
     
 - Fork this repo and create new branch
 - Place your .mp3 inside **public/sounds/[SOUND FILE NAME].mp3**
