@@ -1,13 +1,16 @@
 import type { NextPage } from 'next'
-import { Container, Heading, Box, Grid, GridItem } from '@chakra-ui/react';
+import { Container, Heading, Box, Grid, GridItem, Center, Link } from '@chakra-ui/react';
 import { SoundBox } from '../components';
 import { sounds } from '../utils/sounds.data';
+import { FiGithub } from 'react-icons/fi'; 
 
 const Home: NextPage = () => {
   return (
-    <Container maxW={'container.lg'} pt={'30px'}>
-      <Heading>Sounds</Heading>
-      <Grid templateColumns='repeat(6, 1fr)' gap={4} mt={10}>
+    <Container maxW={'container.lg'} >
+      <Center h={'100vh'}>
+      <Box>
+      
+      <Grid templateColumns='repeat(6, 1fr)' gap={4} mb={'40px'} >
         
          {
            sounds.map((sound, key) => (
@@ -20,6 +23,11 @@ const Home: NextPage = () => {
         
         
       </Grid>
+      <Link textAlign={'center'} w={'100%'}  href='https://github.com/brkss/beautifulsounds' isExternal>
+          <FiGithub size={25} style={{margin: 'auto', opacity: .8}} />  
+      </Link>
+      </Box>
+      </Center>
     </Container>
   )
 }
