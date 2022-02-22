@@ -7,11 +7,11 @@ const Home: NextPage = () => {
   return (
     <Container maxW={'container.lg'} pt={'30px'}>
       <Heading>Sounds</Heading>
-      <Grid templateColumns='repeat(5, 1fr)' gap={4} mt={10}>
+      <Grid templateColumns='repeat(6, 1fr)' gap={4} mt={10}>
         
          {
            sounds.map((sound, key) => (
-            <GridItem key={key} w='100%' h='130' >
+            <GridItem colSpan={{md: 1, base: 3}} key={key} w='100%' h='130' >
               <SoundBox {...sound}  /> 
             </GridItem>
            ))
